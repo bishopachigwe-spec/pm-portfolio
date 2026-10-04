@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bishop Achigwe | Product Management & Digital Transformation</title>
+  <meta name="description" content="Bishop Achigwe, Product Management and Digital Transformation leader focused on digital banking, investment platforms, customer experience and cross-functional delivery." />
+  <style>
+    :root {
+      --ink: #111111;
+      --muted: #6b6b6b;
+      --line: #dedede;
+      --paper: #ffffff;
+      --soft: #f6f6f3;
+      --accent: #1a1a1a;
+      --max: 1100px;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body { margin: 0; font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; color: var(--ink); background: var(--paper); line-height: 1.65; }
+    a { color: inherit; }
+    .wrap { width: min(calc(100% - 40px), var(--max)); margin: 0 auto; }
+    header { position: sticky; top: 0; z-index: 20; background: rgba(255,255,255,.94); backdrop-filter: blur(12px); border-bottom: 1px solid var(--line); }
+    nav { height: 72px; display: flex; align-items: center; justify-content: space-between; gap: 20px; }
+    .brand { font-weight: 800; letter-spacing: -.02em; text-decoration: none; }
+    .navlinks { display: flex; gap: 22px; font-size: 14px; color: #444; }
+    .navlinks a { text-decoration: none; }
+    .hero { padding: 110px 0 88px; display: grid; grid-template-columns: 1.3fr .7fr; gap: 60px; align-items: end; }
+    .eyebrow { text-transform: uppercase; letter-spacing: .14em; font-size: 12px; color: var(--muted); font-weight: 700; }
+    h1 { font-size: clamp(44px, 7vw, 82px); line-height: .96; letter-spacing: -.055em; margin: 16px 0 24px; max-width: 800px; }
+    .lead { font-size: 21px; line-height: 1.5; max-width: 760px; color: #2d2d2d; }
+    .hero-card { border: 1px solid var(--line); background: var(--soft); padding: 28px; }
+    .hero-card strong { display: block; font-size: 13px; text-transform: uppercase; letter-spacing: .1em; margin-bottom: 8px; }
+    .hero-card p { margin: 0 0 18px; font-size: 15px; }
+    .hero-card p:last-child { margin-bottom: 0; }
+    section { padding: 92px 0; border-top: 1px solid var(--line); }
+    h2 { margin: 0 0 18px; font-size: 38px; letter-spacing: -.035em; line-height: 1.1; }
+    h3 { font-size: 23px; line-height: 1.2; margin: 0 0 12px; letter-spacing: -.02em; }
+    .section-intro { max-width: 760px; color: #555; font-size: 17px; }
+    .grid-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; margin-top: 34px; }
+    .grid-2 { display: grid; grid-template-columns: repeat(2, 1fr); gap: 18px; margin-top: 34px; }
+    .card { border: 1px solid var(--line); padding: 26px; background: #fff; }
+    .metric { font-size: 36px; font-weight: 800; letter-spacing: -.04em; margin-bottom: 4px; }
+    .label { color: var(--muted); font-size: 14px; }
+    .case { margin-top: 48px; }
+    .case-head { display: flex; justify-content: space-between; gap: 28px; align-items: flex-end; border-bottom: 1px solid var(--line); padding-bottom: 22px; }
+    .tag { display: inline-block; border: 1px solid var(--line); padding: 7px 10px; font-size: 12px; text-transform: uppercase; letter-spacing: .08em; margin: 0 6px 6px 0; }
+    .case-body { display: grid; grid-template-columns: .8fr 1.2fr; gap: 48px; padding-top: 34px; }
+    .case-label { color: var(--muted); font-size: 12px; text-transform: uppercase; letter-spacing: .12em; font-weight: 700; margin-bottom: 10px; }
+    .quote { border-left: 3px solid var(--ink); padding: 4px 0 4px 18px; font-size: 24px; line-height: 1.35; font-weight: 700; margin: 28px 0; }
+    .steps { display: grid; gap: 12px; margin-top: 18px; }
+    .step { display: grid; grid-template-columns: 34px 1fr; gap: 14px; align-items: start; }
+    .num { width: 30px; height: 30px; border: 1px solid var(--ink); display: grid; place-items: center; font-weight: 700; font-size: 13px; }
+    .step p { margin: 2px 0 0; color: #444; }
+    ul { margin: 8px 0 0 20px; padding: 0; }
+    li { margin: 7px 0; }
+    .principle { margin-top: 32px; padding: 28px; background: var(--soft); }
+    .note { color: var(--muted); font-size: 13px; }
+    .contact { display: flex; gap: 14px; flex-wrap: wrap; margin-top: 26px; }
+    .btn { display: inline-block; padding: 12px 16px; border: 1px solid var(--ink); text-decoration: none; font-weight: 700; font-size: 14px; }
+    footer { border-top: 1px solid var(--line); padding: 28px 0 50px; color: var(--muted); font-size: 13px; }
+    @media (max-width: 820px) {
+      .hero, .case-body, .grid-3, .grid-2 { grid-template-columns: 1fr; }
+      .hero { padding-top: 76px; }
+      .case-head { flex-direction: column; align-items: flex-start; }
+      .navlinks { display: none; }
+    }
+  </style>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <nav>
+      <a class="brand" href="#top">Bishop Achigwe</a>
+      <div class="navlinks">
+        <a href="#about">About</a>
+        <a href="#work">Selected Work</a>
+        <a href="#approach">Approach</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+  <div class="wrap">
+    <section class="hero" style="border-top:0;">
+      <div>
+        <div class="eyebrow">Product Management & Digital Transformation</div>
+        <h1>Building digital products people can actually use.</h1>
+        <p class="lead">I lead digital banking and investment products across strategy, customer experience, product design, cross-functional delivery and business growth.</p>
+        <div class="contact">
+          <a class="btn" href="https://www.linkedin.com/in/bishopachigwe" target="_blank" rel="noreferrer">LinkedIn</a>
+          <a class="btn" href="mailto:bishopeachigwe@gmail.com">Email</a>
+        </div>
+      </div>
+      <aside class="hero-card">
+        <strong>Currently</strong>
+        <p>Team Lead, Digital Investment Platform (M36), Union Bank of Nigeria.</p>
+        <strong>Focus</strong>
+        <p>Product strategy, customer-led discovery, digital banking, investment platforms, self-service and cross-functional leadership.</p>
+        <strong>Portfolio note</strong>
+        <p>Selected work is presented at a high level to protect confidential bank information.</p>
+      </aside>
+    </section>
+
+    <section id="about">
+      <div class="eyebrow">About</div>
+      <h2>Product leadership grounded in banking and customer reality.</h2>
+      <p class="section-intro">My experience sits at the intersection of digital products, customer experience, technology, operations and commercial outcomes. I have led teams and initiatives across digital investment, mobile and web banking, strategic partnerships, contact-centre transformation and sales operations.</p>
+      <div class="grid-3">
+        <div class="card"><div class="metric">6+</div><div class="label">Years in progressive leadership roles at Union Bank</div></div>
+        <div class="card"><div class="metric">₦5.56bn</div><div class="label">YTD M36 investment value documented in my current role</div></div>
+        <div class="card"><div class="metric">12,000+</div><div class="label">M36 users documented in my current role</div></div>
+      </div>
+      <p class="note" style="margin-top:16px;">The M36 figures above are from my current CV and represent the reported year-to-date position.</p>
+    </section>
+
+    <section id="work">
+      <div class="eyebrow">Selected Work</div>
+      <h2>Two products, two different leadership problems.</h2>
+      <p class="section-intro">One required a turnaround and a renewed growth strategy. The other required a fundamental rethink of ownership, self-service and customer journeys while navigating security and regulatory constraints.</p>
+
+      <article class="case">
+        <div class="case-head">
+          <div>
+            <div class="eyebrow">Case Study 01</div>
+            <h3>M36: Reviving a declining digital investment platform</h3>
+          </div>
+          <div>
+            <span class="tag">Turnaround</span><span class="tag">Strategy</span><span class="tag">Growth</span><span class="tag">CX</span>
+          </div>
+        </div>
+        <div class="case-body">
+          <div>
+            <div class="case-label">Context</div>
+            <p>M36 had declining onboarding and adoption, production issues and limited product visibility. The platform had capacity, but the internal organisation and customer-facing strategy were not translating that capacity into sustained adoption.</p>
+            <div class="principle">
+              <div class="case-label">Core strategy</div>
+              <h3>Internal adoption to external scale.</h3>
+              <p>Build understanding and confidence inside the bank first, turn staff into informed advocates, then scale the proposition externally to customers.</p>
+            </div>
+          </div>
+          <div>
+            <div class="case-label">What I led</div>
+            <div class="steps">
+              <div class="step"><div class="num">1</div><p><strong>Stabilise the fundamentals.</strong> Identified production issues and led efforts to restore non-functional services, including SMS OTP capabilities important to onboarding, password recovery and device changes.</p></div>
+              <div class="step"><div class="num">2</div><p><strong>Set a clear direction.</strong> Developed a strategy document, aligned the M36 team, and used multiple internal presentations to create shared understanding of the plan.</p></div>
+              <div class="step"><div class="num">3</div><p><strong>Build stakeholder buy-in.</strong> Engaged teams including Corporate Communications and Treasury to clarify the support required for execution.</p></div>
+              <div class="step"><div class="num">4</div><p><strong>Enable the organisation.</strong> Led bank-wide, frontline and departmental training so staff understood the product, could confidently use it and could advocate for it.</p></div>
+              <div class="step"><div class="num">5</div><p><strong>Close the feedback loop.</strong> Used customer feedback and analytics to shape priorities, monitor the pulse of the product and adjust decisions after deployment.</p></div>
+              <div class="step"><div class="num">6</div><p><strong>Define the next product.</strong> Began shaping M36 V2 as a more accessible financial lifestyle ecosystem rather than a product limited to investment transactions.</p></div>
+            </div>
+            <div class="quote">“The product had capacity. The bigger problem was visibility, confidence and execution.”</div>
+            <div class="case-label">Reported impact</div>
+            <p>The onboarding decline was reversed, reactivation and onboarding improved materially, and reporting became consistently positive month on month. Team morale also improved as the team began to see tangible results from the strategy.</p>
+            <div class="grid-2">
+              <div class="card"><div class="metric">2,630</div><div class="label">YTD investment transactions</div></div>
+              <div class="card"><div class="metric">100%</div><div class="label">Platform uptime documented in CV</div></div>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="case">
+        <div class="case-head">
+          <div>
+            <div class="eyebrow">Case Study 02</div>
+            <h3>UnionMobile 2.0: Rebuilding digital banking around self-service</h3>
+          </div>
+          <div>
+            <span class="tag">Product Strategy</span><span class="tag">UX</span><span class="tag">Self-Service</span><span class="tag">Risk</span>
+          </div>
+        </div>
+        <div class="case-body">
+          <div>
+            <div class="case-label">Problem</div>
+            <p>The previous application was developed and managed by an external vendor. The bank shared revenue with the vendor, feature delivery and support were slowed by the dependency, and maintenance was costly.</p>
+            <p>The experience also relied heavily on assisted service for routine requests that could potentially be completed by customers themselves.</p>
+            <div class="principle">
+              <div class="case-label">Product vision</div>
+              <h3>Give customers more control, without weakening the bank's controls.</h3>
+              <p>Move routine activities into self-service, shorten unnecessary journeys and create an internally owned product that the bank can evolve more directly.</p>
+            </div>
+          </div>
+          <div>
+            <div class="case-label">Research inputs</div>
+            <p>Customer complaints data, contact-centre data, app reviews, customer interviews, surveys, usability testing, transaction data, journey analysis, branch feedback and competitor and industry analysis.</p>
+
+            <div class="case-label" style="margin-top:28px;">Key product decisions</div>
+            <ul>
+              <li>Self-service PIN change, password change and reset, security-word creation and reset.</li>
+              <li>Self-service account opening and account upgrades.</li>
+              <li>Self-service transaction-limit increases up to ₦25m, compared with the previous ₦5m self-service ceiling.</li>
+              <li>Profile and device unblock journeys to reduce dependence on email, contact centre, chat and branch assistance.</li>
+              <li>Alternative authentication and verification options, including security questions, biometrics, liveness checks and Union Token as a soft-token option.</li>
+              <li>Shorter journeys and removal of redundant or repeated processes.</li>
+            </ul>
+
+            <div class="case-label" style="margin-top:28px;">The hard part</div>
+            <p>The shift from assisted service to greater self-service created legitimate concerns across Compliance, IT Control and Information Security. I pushed for the customer experience improvements while working with those teams to understand the policy and control requirements and design mitigations rather than treating risk as a reason to stop product progress.</p>
+            <div class="quote">“The question became: how can we let the customer do this themselves safely?”</div>
+
+            <div class="case-label">My contribution</div>
+            <p>I worked with the project team, developers, designers, Service Assurance, Compliance, IT Control, InfoSec, Corporate Communications and executive stakeholders. I contributed to the BRS, documented and reviewed screen copy, co-designed the UI, created user stories and reviewed requirements, policies and features as development progressed.</p>
+
+            <div class="case-label" style="margin-top:28px;">Current status</div>
+            <p>The application has been deployed to the Apple App Store and Google Play Store and accepted by both platforms. Customer deployment and migration are pending Executive Committee approval.</p>
+            <p class="note">Because customer migration has not yet happened, post-launch adoption, service-volume, satisfaction and financial impact metrics are intentionally not presented as achieved outcomes.</p>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <section id="approach">
+      <div class="eyebrow">How I work</div>
+      <h2>Listen closely. Simplify aggressively. Manage risk deliberately. Deliver.</h2>
+      <div class="grid-2">
+        <div class="card"><h3>Customer-led</h3><p>Customer feedback, service data, behavioural signals and direct research guide prioritisation and product decisions.</p></div>
+        <div class="card"><h3>Outcome-oriented</h3><p>I connect product work to adoption, customer experience, operational efficiency and commercial outcomes rather than shipping features for their own sake.</p></div>
+        <div class="card"><h3>Cross-functional</h3><p>I keep developers, designers, control teams, business stakeholders and executives aligned from discovery through delivery.</p></div>
+        <div class="card"><h3>Risk-aware, not risk-led</h3><p>In regulated environments, I work to find a safe path to the customer outcome instead of allowing controls to become a blanket reason for unnecessary friction.</p></div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="eyebrow">Contact</div>
+      <h2>Let's build products that make the next step easier.</h2>
+      <p class="section-intro">For product leadership, digital transformation and customer experience opportunities, connect with me on LinkedIn or send an email.</p>
+      <div class="contact">
+        <a class="btn" href="mailto:bishopeachigwe@gmail.com">bishopeachigwe@gmail.com</a>
+        <a class="btn" href="https://www.linkedin.com/in/bishopachigwe" target="_blank" rel="noreferrer">linkedin.com/in/bishopachigwe</a>
+      </div>
+    </section>
+  </div>
+</main>
+
+<footer>
+  <div class="wrap">© 2026 Bishop Achigwe. Selected case studies are anonymised and intentionally exclude confidential bank information.</div>
+</footer>
+</body>
+</html>
